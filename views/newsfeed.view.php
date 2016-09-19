@@ -84,24 +84,27 @@
   <section class="section">
     <div class="container">
     <?php 
-    if (isset($_GET['a']))
-    {
+    if (isset($_GET['a'])):
+
+      require 'asteroids.php';
       require 'asteroids.view.php';
-    }
-    else if(isset($_GET['p']))
-    {
+
+    elseif(isset($_GET['p'])):
+
       require 'profile.php';
       require 'profile.view.php';
-    }
-    else if(isset($_GET['s'])) 
-    {
+
+    elseif(isset($_GET['s'])):
+
       require 'settings.php';
       require 'settings.view.php';
-    }
-    else
-    {
+    
+    else:
+
+      require 'timeline.php';
       require 'timeline.view.php';
-    }
+
+    endif;
     ?>
     </div>
   </section>
@@ -109,21 +112,17 @@
   <?php require("includes/footer.php"); ?>
 
 
+  <script src="/js/jquery-2.2.0.min.js"></script>
+  <script src="/js/clipboard.min.js"></script>
+  <script src="/js/bulma.js"></script>
 
-        <script async id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
-        <script async type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+  <script type="text/javascript">
+    $('.model-button').click(function() {
+      var target = $(this).data('target');
+      $('html').addClass('is-clipped');
+      $(target).addClass('is-active');
+    });
+    </script>
 
-        <script src="/js/jquery-2.2.0.min.js"></script>
-        <script src="/js/clipboard.min.js"></script>
-        <script src="/js/bulma.js"></script>
-
-        <script type="text/javascript">
-          $('.model-button').click(function() {
-            var target = $(this).data('target');
-            $('html').addClass('is-clipped');
-            $(target).addClass('is-active');
-          });
-        </script>
-
-      </body>
-      </html>
+  </body>
+</html>

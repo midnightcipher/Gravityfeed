@@ -97,25 +97,21 @@
 												</p>
 										</form>
 										<?php
-										if(isset($error))
-										{
-										 	foreach($error as $error)
-										 	{
+										if(isset($error)):
+										 	foreach($error as $error):
 											?>
 	                     <div class="alert alert-danger">
 	                        <i class="glyphicon glyphicon-warning-sign"></i> &nbsp; <?php echo $error; ?>
 	                     </div>
 	                     <?php
-											}
-										}
-										else if(isset($_GET['joined']))
-										{
+											endforeach;
+										else if(isset($_GET['joined'])):
 										?>
 		                 <div class="alert alert-info">
 		                      <i class="glyphicon glyphicon-log-in"></i> &nbsp; Successfully registered <a href='index.php'>login</a> here
 		                 </div>
-		                 <?php
-										}
+		                <?php
+										endif;
 										?>
 									</div>
 								</div>
@@ -143,18 +139,6 @@
 			<script src="/js/jquery-2.2.0.min.js"></script>
 			<script src="/js/clipboard.min.js"></script>
 			<script src="/js/bulma.js"></script>
-
-
-
-			<script type="text/javascript">
-				(function($) {
-					window.fnames = new Array();
-					window.ftypes = new Array();
-					fnames[0]='EMAIL';
-					ftypes[0]='email';
-				}(jQuery));
-				var $mcj = jQuery.noConflict(true);
-			</script>
 
 		</body>
 		</html>
