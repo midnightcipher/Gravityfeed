@@ -17,9 +17,9 @@
               <i class="fa fa-user"></i>
             </p>
             <?php 
-            if (isset($updateUsernameMessage)){
+            if (isset($updateUsernameMessage)):
               echo $updateUsernameMessage;
-            } 
+            endif;
             ?>
               <!-- 
               Set input class to "is-success or is-danger"

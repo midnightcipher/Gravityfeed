@@ -59,19 +59,19 @@
         
         <!-- POST A DROPLET -->
         <form action="/newsfeed.php" method="post">
-          <div class="box">
+          <div class="">
             <div class="card is-fullwidth">
               <p class="control">
                 <textarea name="timelineNewDropletPost" class="textarea" placeholder="What's happening?"></textarea>
               </p>
-              <?php 
+              <footer class="card-footer">
+                <button type="submit" class="card-footer-item">Drop</button>
+              </footer>
+                            <?php 
               if (isset($updatePostNewDropletMessage)):
                 echo $updatePostNewDropletMessage;
               endif;
               ?>
-              <footer class="card-footer">
-                <button type="submit" class="card-footer-item">Drop</button>
-              </footer>
             </div>
           </div>
         </form>

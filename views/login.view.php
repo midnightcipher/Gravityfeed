@@ -94,14 +94,13 @@
 												</form>
 												<div id="error">
 								        <?php
-													if(isset($error))
-													{
+													if(isset($error)):
 													?>
 					                <div class="alert alert-danger">
 					                   <i class="glyphicon glyphicon-warning-sign"></i> &nbsp; <?php echo $error; ?> !
 					                </div>
 					                <?php
-													}
+													endif;
 													?>
 								        </div>
 											</div>
