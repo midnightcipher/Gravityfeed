@@ -86,22 +86,22 @@
     <?php 
     if (isset($_GET['a'])):
 
-      require 'asteroids.php';
+      require './partials/asteroids.partials.php';
       require 'asteroids.view.php';
 
     elseif(isset($_GET['p'])):
 
-      require 'profile.php';
+      require './partials/profile.partials.php';
       require 'profile.view.php';
 
     elseif(isset($_GET['s'])):
 
-      require 'settings.php';
+      require './partials/settings.partials.php';
       require 'settings.view.php';
     
     else:
 
-      require 'timeline.php';
+      require './partials/timeline.partials.php';
       require 'timeline.view.php';
 
     endif;

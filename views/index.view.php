@@ -21,95 +21,6 @@
 </head>
 
 <body class="layout-default">
-	<!-- <section class="hero is-primary">
-		<div class="hero-head">
-			<div class="container">
-				<nav class="nav">
-					<div class="nav-left">
-					</div>
-					<div class="nav-center">
-						<a class="nav-item is-brand" href="#">
-							GRAVITYFEED
-						</a>
-					</div>
-
-					<div class="nav-right nav-menu is-active">
-						<span class="nav-item">
-							<a class="button" href="./login.php">
-								<span class="icon">
-									<i class="fa fa-sign-in"></i>
-								</span>
-								<span>Login</span>
-							</a>
-							<a class="button is-primary" href="./signup.php">
-								<span class="icon">
-									<i class="fa fa-user-plus"></i>
-								</span>
-								<span>Sign Up</span>
-							</a>
-						</span>
-					</div>
-				</nav>
-
-			</div>
-		</div>
-
-		<div class="hero-body">
-
-		</div>
-	</section>
-
-	<section class="section is-medium">
-		<div class="container">
-			<div class="columns is-vcentered">
-				<div class="column">
-					<h3 class="title is-2">
-						<a href="#">
-							<span class="icon is-large">
-								<i class="fa fa-tint"></i>
-							</span>
-							We keep it <strong>simple</strong>
-						</a>
-					</h3>
-					<h4 class="subtitle is-4">here is one of our latest drops, look how simple it is! </h4>
-				</div>
-
-				<div class="column">
-					<div class="box">
-						<article class="media">
-							<div class="media-left">
-								<figure class="image is-64x64">
-									<img src="http://placehold.it/128x128" alt="Image">
-								</figure>
-							</div>
-							<div class="media-content">
-								<div class="content">
-									<p>
-										<strong>ashleybakernz</strong> <small>@ashleybakernz</small> <small>$TimeOfDroplet</small>
-										<br>
-										$DropletText
-									</p>
-								</div>
-								<nav class="level">
-									<div class="level-left">
-										<a class="level-item">
-											<span class="icon is-small"><i class="ion-waterdrop"></i></span>
-										</a>
-										<a class="level-item">
-											<span class="icon is-small"><i class="ion-ios-heart"></i></span>
-										</a>
-										<a class="level-item">
-											<span class="icon is-small"><i class="ion-ios-chatboxes"></i></span>
-										</a>
-									</div>
-								</nav>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 
 	<section class="hero is-primary is-fullheight header-image">
     <div class="hero-head">
@@ -131,14 +42,14 @@
           </span>
           <div class="nav-right nav-menu">
 
-							<a class="button is-primary" href="./login.php">
+							<a class="button is-primary" href="login.php">
 								<span class="icon">
 									<i class="fa fa-sign-in"></i>
 								</span>
 								<span>Login</span>
 							</a>
             <span class="nav-item">
-              <a href="./signup.php" class="button is-outlined">
+              <a href="signup.php" class="button is-outlined">
                 <span class="icon">
                   <i class="fa fa-user-plus"></i>
                 </span>
@@ -203,10 +114,10 @@
   <?php require("includes/footer.php"); ?>
 
 
-				<script src="/js/jquery-2.2.0.min.js"></script>
-				<script src="/js/clipboard.min.js"></script>
-				<script src="/js/bulma.js"></script>
+	<script src="/js/jquery-2.2.0.min.js"></script>
+	<script src="/js/clipboard.min.js"></script>
+	<script src="/js/bulma.js"></script>
 
 
-			</body>
-			</html>
+  </body>
+</html>
