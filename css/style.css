@@ -1,0 +1,59 @@
+a{
+	color: #26A69A;
+}
+
+.color-grey{
+	color: #69707a;
+}
+
+.hero.is-primary{
+	background-color: #26A69A;
+}
+
+.button.is-primary{
+	background-color: #26A69A;    
+	border-color: #fff;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero.is-primary .nav-menu {
+    background-color: #26A69A;
+  }
+}
+
+.nav-item a.is-tab.is-active,
+a.nav-item.is-tab.is-active {
+  border-bottom: 3px solid #26A69A;
+  border-top: 3px solid transparent;
+  color: #26A69A;
+}
+
+.nav-item a.is-tab:hover,
+a.nav-item.is-tab:hover {
+  border-bottom: 1px solid #26A69A;
+  border-top: 1px solid transparent;
+}
+
+.dropdown {
+  box-shadow: 0 0 8px #777;
+  display: none;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+}
+
+.dropdown.is-open {
+  display: block;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.header-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.39)),url(../img/index-hero.jpeg);
+    background-size: cover;
+    background-position: center;
+}

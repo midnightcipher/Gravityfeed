@@ -1,0 +1,124 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+.is-white-text{
+  color:#fff;
+}
+
+/* ==========================================================================
+  NAVIGATION PAGE
+   ========================================================================== */
+
+.hero.is-primary a.nav-item, .hero.is-primary .nav-item a:not(.button) {
+    color: #fff;
+}
+.nav-item a, a.nav-item {
+    color: #fff;
+    font-weight: 700;
+}
+.nav-item a, a.nav-item:hover {
+    color: #fff;
+}
+.nav-item a.is-active, a.nav-item.is-active {
+    color: #089CB6;
+}
+
+/* ==========================================================================
+  HERO PAGE
+   ========================================================================== */
+
+.header-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.39)),url('https://hd.unsplash.com/photo-1464014067366-e69d8b432b8a');
+  background-position: center;
+  background-size: cover;
+}
+.is-outlined {
+  background-color:transparent;
+  color:#fff;
+}
+.hero-cta {
+  padding: 30px 0;
+}
+.panel-block.section p {
+  font-size: 17px;
+  line-height: 1.4;
+  color:#95A5A6;
+}
+.section.main {
+  background-color:#F0F0F0;
+}
+.icon-block {
+  font-size:5em;
+}
+.button.is-primary.is-outlined {
+    background-color: transparent;
+    border-color: #089CB6;
+    color: #089CB6;
+}
+
+/* ==========================================================================
+  HERO
+   ========================================================================== */
+footer{
+  text-decoration: none;
+}
+
+.content a:not(.button) {
+    border-bottom: none;
+}
+
+.hero.is-primary {
+    background-color: #089CB6;
+    color: white;
+}
+
+
+.bg-contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.39)),url('../img/headers/contact-header.jpg');
+}
+
+.bg-creations {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.39)),url('../img/headers/our-work-header.jpg');
+}
+
+.bg-support {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.39)),url('../img/headers/support-header.jpg');
+}
+
+.bg-services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.39)),url('../img/headers/services-header.jpg');
+}
+
+.bg-about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.39)),url('../img/headers/about-header.jpg');
+}
+
+.bg-privacy {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.39)),url('../img/headers/privacy-header.jpg');
+}
+
+.bg-terms {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.39)),url('../img/headers/terms-header.jpg');
+}
+.bg-404 {
+    background-color: #089CB6;
+}
+
+/* ==========================================================================
+  Our Creations
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
