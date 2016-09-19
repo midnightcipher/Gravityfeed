@@ -1,9 +1,9 @@
 <?php
-require_once('includes/session.php');
+require_once('./includes/session.php');
 
 if(loggedIn())
 {
-	redirect('newsfeed.php');
+	redirect('./newsfeed.php');
 }
 
 if(isset($_POST['btn-signup']))
@@ -45,7 +45,7 @@ if(isset($_POST['btn-signup']))
 			else
 			{
 				if($session->register($uname,$umail,$upass)){					
-					redirect('newsfeed.php?j=true');
+					redirect('./newsfeed.php?j=true');
 				}
 			}
 		}

@@ -1,9 +1,9 @@
 <?php
-require_once('includes/session.php');
+require_once('./includes/session.php');
 
 if(loggedIn())
 {
-	redirect('newsfeed.php');
+	redirect('./newsfeed.php');
 }
 
 if(isset($_POST['btn-login']))
@@ -14,7 +14,7 @@ if(isset($_POST['btn-login']))
 		
 	if($session->doLogin($uname,$umail,$upass))
 	{
-		redirect('newsfeed.php');
+		redirect('./newsfeed.php');
 	}
 	else
 	{

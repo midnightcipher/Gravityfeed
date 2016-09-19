@@ -105,7 +105,7 @@
 	                     </div>
 	                     <?php
 											endforeach;
-										else if(isset($_GET['joined'])):
+										elseif(isset($_GET['joined'])):
 										?>
 		                 <div class="alert alert-info">
 		                      <i class="glyphicon glyphicon-log-in"></i> &nbsp; Successfully registered <a href='index.php'>login</a> here

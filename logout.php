@@ -3,9 +3,9 @@
 
 	if(!loggedIn())
 	{
-		redirect('index.php');
+		redirect('./index.php');
 	}
 
 	doLogout();
-	redirect('index.php');
+	redirect('./index.php');
 	
