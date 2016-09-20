@@ -10,7 +10,7 @@
            Account
          </p>
          <div class="panel-block">
-           <form method="post" action="/newsfeed.php?s=<?php echo $userRow['user_name']; ?>">
+           <form method="post" action="/newsfeed.php?p=<?php echo $userRow['user_name']; ?>&s=true">
             <label class="label">Username</label>
             <p class="control has-icon">
               <input name="newUsername" class="input" type="text" placeholder="Username" value="">

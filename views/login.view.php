@@ -80,7 +80,7 @@
 													<p class="hero-buttons">
 														<button type="submit" name="btn-login" id="btn-login" class="button">
 															<span class="icon">
-																<i class="fa fa-sign-in"></i>
+																<i class="ion-log-in"></i>
 															</span>
 															<span>Login</span>
 														</button>

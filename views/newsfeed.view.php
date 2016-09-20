@@ -95,11 +95,6 @@
       require './partials/profile.partials.php';
       require 'profile.view.php';
 
-    elseif(isset($_GET['s'])):
-
-      require './partials/settings.partials.php';
-      require 'settings.view.php';
-    
     else:
 
       require './partials/timeline.partials.php';

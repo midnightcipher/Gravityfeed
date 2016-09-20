@@ -84,7 +84,7 @@
 												<p class="hero-buttons">
 													<button type="submit" name="btn-signup" id="btn-signup" class="button">
 														<span class="icon">
-															<i class="fa fa-user-plus"></i>
+															<i class="ion-person-add"></i>
 														</span>
 														<span>Sign up</span>
 													</button>

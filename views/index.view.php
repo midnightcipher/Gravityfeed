@@ -44,14 +44,14 @@
 
 							<a class="button is-primary" href="login.php">
 								<span class="icon">
-									<i class="fa fa-sign-in"></i>
+									<i class="ion-log-in"></i>
 								</span>
 								<span>Login</span>
 							</a>
             <span class="nav-item">
               <a href="signup.php" class="button is-outlined">
                 <span class="icon">
-                  <i class="fa fa-user-plus"></i>
+                  <i class="ion-person-add"></i>
                 </span>
 								<span>Sign Up</span>
               </a>

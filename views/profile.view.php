@@ -49,6 +49,12 @@
         </span>
         Settings
       </a>
+      <a class="nav-item is-tab has-text-centered" href="logout.php">
+        <span class="icon">
+          <i class="ion-log-out"></i>
+        </span>
+        Logout
+      </a>
     </div>
   </div>
 </nav>
@@ -68,7 +74,10 @@
 
     elseif(isset($_GET['p']) && isset($_GET['s'])):
       if ($_GET['s'] == 'true'):
+
+        require './partials/settings.partials.php';
         require 'views/profile/settings.view.php';
+
       else:
         echo 'url not set';
       endif;
