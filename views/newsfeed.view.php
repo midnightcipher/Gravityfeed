@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bulma is a CSS framework based on Flexbox and built with Sass">
 
   <title>Gravityfeed | Home</title>
 
@@ -13,7 +12,7 @@
   <link rel="stylesheet" href="./css/ionicons.min.css">
   
   <link rel="stylesheet" href="/css/bulma.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/main.css">
 
   <link href="style/type/fontello.css" rel="stylesheet">
   <link href="style/type/budicons.css" rel="stylesheet">
@@ -21,6 +20,9 @@
 </head>
 
 <body class="layout-default">
+
+
+
   <section class="hero is-primary">
     <div class="hero-head">
       <div class="container">
@@ -48,41 +50,47 @@
     <div class="hero-body">
 
     </div>
+    
+    <div class="hero-foot">
+    <div class="container">
+      <nav class="tabs is-boxed is-centered">
+        <ul>
+          <li class="is-active">
+            <a  href="newsfeed.php">
+              <span class="icon">
+                <i class="ion-waterdrop"></i>
+              </span>
+              Droplets
+            </a>
+          <li>
+            <a class="nav-item is-tab " href="newsfeed.php?a=<?php echo $userRow['user_name']; ?>">
+              <span class="icon">
+                <i class="ion-planet"></i>
+              </span>
+              Asteroids
+            </a>
+          <li>
+            <a class="nav-item is-tab " href="newsfeed.php?p=<?php echo $userRow['user_name']; ?>">
+              <span class="icon">
+                <i class="ion-ios-body"></i>
+              </span>
+              Profile
+            </a>
+          <li>
+            <a class="nav-item is-tab " href="newsfeed.php?s=<?php echo $userRow['user_name']; ?>">
+              <span class="icon">
+                <i class="ion-settings"></i>
+              </span>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </nav></div>
+    </div>
   </section>
 
-<nav class="nav has-shadow">
-  <div class="container">
-    <div class="nav-center">
-      <a class="nav-item is-tab " href="newsfeed.php">
-        <span class="icon">
-          <i class="ion-waterdrop"></i>
-        </span>
-        Droplets
-      </a>
-      <a class="nav-item is-tab " href="newsfeed.php?a=<?php echo $userRow['user_name']; ?>">
-        <span class="icon">
-          <i class="ion-planet"></i>
-        </span>
-        Asteroids
-      </a>
-      <a class="nav-item is-tab " href="newsfeed.php?p=<?php echo $userRow['user_name']; ?>">
-        <span class="icon">
-          <i class="ion-ios-body"></i>
-        </span>
-        Profile
-      </a>
-      <a class="nav-item is-tab " href="newsfeed.php?s=<?php echo $userRow['user_name']; ?>">
-        <span class="icon">
-          <i class="ion-settings"></i>
-        </span>
-        Settings
-      </a>
-    </div>
-  </div>
-</nav>
-  
-  <section class="section">
-    <div class="container">
+
+
     <?php 
     if (isset($_GET['a'])):
 
@@ -106,8 +114,6 @@
 
     endif;
     ?>
-    </div>
-  </section>
 
   <?php require("includes/footer.php"); ?>
 
