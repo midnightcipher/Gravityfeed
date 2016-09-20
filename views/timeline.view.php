@@ -56,7 +56,17 @@
           </div> -->
         </div>
         <div class="column is-6">
-        
+
+          <?php 
+            if (isset($updatePostNewDropletMessage)):
+              ?>
+        <div class="notification">
+        <!-- <button class="delete"></button> -->
+        <?= $updatePostNewDropletMessage; ?>
+        </div>
+        <?php
+        endif;
+        ?>
         <!-- POST A DROPLET -->
         <form action="/newsfeed.php" method="post">
           <div class="">
@@ -67,11 +77,6 @@
               <footer class="card-footer">
                 <button type="submit" class="card-footer-item">Drop</button>
               </footer>
-                            <?php 
-              if (isset($updatePostNewDropletMessage)):
-                echo $updatePostNewDropletMessage;
-              endif;
-              ?>
             </div>
           </div>
         </form>

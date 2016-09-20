@@ -69,19 +69,12 @@
               </span>
               Asteroids
             </a>
-          <li class="<?= (isset($_GET['p'])) ? 'is-active' : '' ?>">
-            <a class="nav-item is-tab " href="newsfeed.php?p=<?php echo $userRow['user_name']; ?>">
+          <li class="<?= (isset($_GET['p']) || isset($_GET['s'])) ? 'is-active' : '' ?>">
+            <a class="nav-item is-tab " href="newsfeed.php?p=<?php echo $userRow['user_name']; ?>&d=true">
               <span class="icon">
                 <i class="ion-ios-body"></i>
               </span>
               Profile
-            </a>
-          <li class="<?= (isset($_GET['s'])) ? 'is-active' : '' ?>">
-            <a class="nav-item is-tab " href="newsfeed.php?s=<?php echo $userRow['user_name']; ?>">
-              <span class="icon">
-                <i class="ion-settings"></i>
-              </span>
-              Settings
             </a>
           </li>
         </ul>
