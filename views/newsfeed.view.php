@@ -55,28 +55,28 @@
     <div class="container">
       <nav class="tabs is-boxed is-centered">
         <ul>
-          <li class="is-active">
+          <li class="<?= (!isset($_GET['a']) && !isset($_GET['p']) && !isset($_GET['s'])) ? 'is-active' : '' ?>">
             <a  href="newsfeed.php">
               <span class="icon">
                 <i class="ion-waterdrop"></i>
               </span>
               Droplets
             </a>
-          <li>
+          <li class="<?= (isset($_GET['a'])) ? 'is-active' : '' ?>">
             <a class="nav-item is-tab " href="newsfeed.php?a=<?php echo $userRow['user_name']; ?>">
               <span class="icon">
                 <i class="ion-planet"></i>
               </span>
               Asteroids
             </a>
-          <li>
+          <li class="<?= (isset($_GET['p'])) ? 'is-active' : '' ?>">
             <a class="nav-item is-tab " href="newsfeed.php?p=<?php echo $userRow['user_name']; ?>">
               <span class="icon">
                 <i class="ion-ios-body"></i>
               </span>
               Profile
             </a>
-          <li>
+          <li class="<?= (isset($_GET['s'])) ? 'is-active' : '' ?>">
             <a class="nav-item is-tab " href="newsfeed.php?s=<?php echo $userRow['user_name']; ?>">
               <span class="icon">
                 <i class="ion-settings"></i>

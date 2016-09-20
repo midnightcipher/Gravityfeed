@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="./css/ionicons.min.css">
 	
 	<link rel="stylesheet" href="/css/bulma.css">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/main.css">
 
 	<link href="style/type/fontello.css" rel="stylesheet">
 	<link href="style/type/budicons.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
 <body class="layout-default">
 
-	<section class="hero is-primary is-fullheight header-image">
+	<section class="hero is-primary is-fullheight header">
     <div class="hero-head">
 
       <header class="nav">

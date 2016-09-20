@@ -17,13 +17,13 @@
               <div class="card-stats">
                 <ul class="card-stats-list">
                   <li class="card-stats-item">
-                    <a href="#" title="9.840 Tweet">
+                    <a href="#" title="">
                       <span class="card-stats-key">Droplets</span>
                       <span class="card-stats-val"><?= $PersonalDropletCount ?></span>
                     </a>
                   </li>
                   <li class="card-stats-item">
-                    <a href="#/following" title="885 Following">
+                    <a href="#/following" title="">
                       <span class="card-stats-key">Pulling</span>
                       <span class="card-stats-val"><?php echo $userRow['user_pulling']; ?></span>
                     </a>
