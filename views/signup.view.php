@@ -55,32 +55,63 @@
 				<div class="block">
 
 					<div class="columns">
-			      <div class="column is-one-third">
-			        </p>
-			      </div>
-			      <div class="column">
-			        <div class="tile is-ancestor">
-						<div class="tile is-12 is-vertical is-parent">
+						<div class="column is-one-third">
+						</p>
+					</div>
+					<div class="column">
+						<div class="tile is-ancestor">
+							<div class="tile is-12 is-vertical is-parent">
 
-							<div class="tile is-parent">
-								<div class="tile is-child box">
-									<div class="column">
-									<h1 class="title">
-										Sign Up
-									</h1>
-									<form method="post">
-											<p class="control has-icon">
-												<input name="txt_uname" class="input" type="text" placeholder="Username">
-												<i class="fa fa-user"></i>
-											</p>
-											<p class="control has-icon">
-												<input name="txt_umail" class="input" type="email" placeholder="Email">
-												<i class="fa fa-envelope"></i>
-											</p>
-											<p class="control has-icon">
-												<input name="txt_upass" class="input" type="password" placeholder="Password">
-												<i class="fa fa-lock"></i>
-											</p>
+								<div class="tile is-parent">
+									<div class="tile is-child box">
+										<div class="column">
+											<h1 class="title">
+												Sign Up
+											</h1>
+											<form method="post">
+												<p class="control has-icon">
+													<input name="txt_uname" class="input" type="text" placeholder="Username">
+													<i class="fa fa-user"></i>
+												</p>
+												<p class="control has-icon">
+													<input name="txt_umail" class="input" type="email" placeholder="Email">
+													<i class="fa fa-envelope"></i>
+												</p>
+												<p class="control has-icon">
+												<input required name="txt_upass" class="input" type="password" placeholder="Password">
+													<i class="fa fa-lock"></i>
+												</p>
+
+												<p class="control">
+													<span class="select">
+														<select name="region">
+															<option value="">Select a region…</option>
+
+															<option value="/regions/northland/">Northland</option>
+
+															<option value="/regions/auckland/">Auckland</option>
+
+															<option value="/regions/waikato/">Waikato</option>
+
+															<option value="/regions/bay-of-plenty/">Bay of Plenty</option>
+
+															<option value="/regions/gisborne/">Gisborne</option>
+
+															<option value="/regions/hawkes-bay/">Hawke's Bay</option>
+
+															<option value="/regions/wairarapa/">Wairarapa</option>
+
+															<option value="/regions/marlborough/">Marlborough</option>
+
+															<option value="/regions/nelson/">Nelson</option>
+
+															<option value="/regions/canterbury-waipara-valley/">Canterbury / Waipara Valley</option>
+
+															<option value="/regions/central-otago/">Central Otago</option>
+														</select>
+													</span>
+												</p>
+
 												<p class="hero-buttons">
 													<button type="submit" name="btn-signup" id="btn-signup" class="button">
 														<span class="icon">
@@ -95,34 +126,34 @@
 														<span>Already have a user?</span>
 													</a>
 												</p>
-										</form>
-										<?php
-										if(isset($error)):
-										 	foreach($error as $error):
-											?>
-	                     <div class="alert alert-danger">
-	                        <i class="glyphicon glyphicon-warning-sign"></i> &nbsp; <?php echo $error; ?>
-	                     </div>
-	                     <?php
-											endforeach;
-										elseif(isset($_GET['joined'])):
-										?>
-		                 <div class="alert alert-info">
-		                      <i class="glyphicon glyphicon-log-in"></i> &nbsp; Successfully registered <a href='index.php'>login</a> here
-		                 </div>
-		                <?php
-										endif;
-										?>
+											</form>
+											<?php
+											if(isset($error)):
+												foreach($error as $error):
+													?>
+												<div class="alert alert-danger">
+													<i class="glyphicon glyphicon-warning-sign"></i> &nbsp; <?php echo $error; ?>
+												</div>
+												<?php
+												endforeach;
+												elseif(isset($_GET['joined'])):
+													?>
+												<div class="alert alert-info">
+													<i class="glyphicon glyphicon-log-in"></i> &nbsp; Successfully registered <a href='index.php'>login</a> here
+												</div>
+												<?php
+												endif;
+												?>
+											</div>
+										</div>
 									</div>
 								</div>
+
 							</div>
 						</div>
-
+						<div class="column">
+						</div>
 					</div>
-			      </div>
-			      <div class="column">
-			      </div>
-			    </div>
 					
 				</div>
 			</div>
@@ -130,15 +161,15 @@
 	</section>
 
 
-  <?php require("includes/footer.php"); ?>
+	<?php require("includes/footer.php"); ?>
 
 
-			<script async id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
-			<script async type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+	<script async id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script>
+	<script async type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
 
-			<script src="/js/jquery-2.2.0.min.js"></script>
-			<script src="/js/clipboard.min.js"></script>
-			<script src="/js/bulma.js"></script>
+	<script src="/js/jquery-2.2.0.min.js"></script>
+	<script src="/js/clipboard.min.js"></script>
+	<script src="/js/bulma.js"></script>
 
-		</body>
-		</html>
+</body>
+</html>

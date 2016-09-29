@@ -77,6 +77,14 @@
               Profile
             </a>
           </li>
+          <li class="<?= (isset($_GET['d'])) ? 'is-active' : '' ?>">
+            <a class="nav-item is-tab " href="newsfeed.php?p=<?php echo $userRow['user_name']; ?>&d=true">
+              <span class="icon">
+                <i class="ion-ios-body"></i>
+              </span>
+              Discover
+            </a>
+          </li>
         </ul>
       </nav></div>
     </div>
