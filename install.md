@@ -38,9 +38,9 @@ VALUES
   (1, 'user', 'user@email.com', '$2y$10$9iTISdbSyiacf2D5QhR9JO8goe1fL4Oynlle/ssRW77.x0N/XRZYy', '2016-09-14 01:47:54', NULL, 32, 52, 20, 'I create awesome websites!');
   ```
 
-  You can not login with the following details below:
+  You can now login with the following details below:
 
-  Username: user
+
   Email: user@email.com
   Password: lol123
 
