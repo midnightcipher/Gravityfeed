@@ -13,7 +13,7 @@ http://imgur.com/a/6ba1R
 [Bulma](http://bulma.io)
 
 ## Author
-Ashley Baker - [Github](https://github.com/ashleybakernz).
+Ashley Baker - [Github](https://github.com/ashleybakernz). - Follow me for more work and star the project :)
 
 ## License
 
