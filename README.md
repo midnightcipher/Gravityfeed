@@ -3,6 +3,8 @@ Gravityfeed is yet again another twitter clone. I was working on this to tru out
 
 Feel free to download and use.
 
+PLEASE NOTE: This project will not have ongoing support. I will help you with setting up questions only.
+
 ## Preview Screenshots
 http://imgur.com/a/6ba1R
 
