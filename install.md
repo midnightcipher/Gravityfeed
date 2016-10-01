@@ -1,5 +1,6 @@
 1. Open project using wamp / mamp or whatever you perfer.
-2. Open up phpmyadmin or any other MySql database manager and insert the following queries.
+2. Open class/Database.php and put your database details in there.
+3. Open up phpmyadmin or any other MySql database manager and insert the following queries.
 
 ```
 CREATE TABLE `droplets` (
